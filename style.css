@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+	font-family: 'Poppins';
+
+}
+body{
+    /* background-color: mediumseagreen; */
+    /* background-color: springgreen; */
+
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.phone-container{
+    width: 100vw;
+    /* height: 10vh; */
+    display: flex;
+    overflow-x: hidden;
+
+
+} 
+
+/* .left{ */
+    /* background-color: black; */
+    /* background: url(./pexels-cottonbro-studio-5082580.jpg); */
+    /* width: 40rem;
+    height: 100vh;
+} */
+.right{
+    background-color: springgreen;
+    background-color: black;
+    width: 100rem;
+    height: 90%;
+    display: flex;
+	flex-direction: column;
+    padding: 15px;
+    /* border-radius: 10px; */
+    /* margin-top: 10%; */
+    margin-bottom: 10%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 6px 0px black;
+
+
+
+}
+.right{
+    display: flex;
+    gap: 5px;
+	margin: 10px 0;
+}
+.phonebook-form{
+    display: flex;
+	margin-top: 20px;
+    flex-direction: column;
+}
+.phonebook-form input{
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: #f3f4f7;
+    margin-top: 10px;
+    
+}
+label{
+    margin-top: 10px;
+}
+.phonebook-form button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+	/* border: 1px solid #d1d5db; */
+    background-color: rgb(107, 102, 102);
+	cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+.phonebook-photo{
+    border: 3px solid white;
+    background-color: white;
+}
+.list{
+    background-color: turquoise;
+    display: flex;
+	flex-direction: column;
+    padding: 15px;
+    /* width: 80rem;
+    height: 20rem; */
+}
+img{
+    width: 100px;
+    border-radius: 50%;
+}
+.list button{
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    /* border-radius: 50%; */
+}
