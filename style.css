@@ -7,8 +7,16 @@
 
 }
 body{
-    /* background-color: mediumseagreen; */
-    /* background-color: springgreen; */
+    /* background-image: url(./Images/pexels-darya-sannikova-4575426.jpg); */
+    /* background-image: url(./Images/pexels-negative-space-33999.jpg); */
+    /* background-image: url(./Images/pexels-photo-4334096.jpeg); */
+    /* background-image: url(./Images/pexels-photo-821754.jpeg); */
+    /* background-image: url(./Images/pexels-tyler-lastovich-1275929.jpg); */
+    /* max-width: 100%; */
+    /* height: auto; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(107, 102, 102);
 
 }
 h1{
@@ -22,12 +30,13 @@ h1{
     overflow-x: hidden;
     display: flex;
     justify-content: space-evenly;
+    margin-top: 20px;
 
 
 } 
 
 .right{
-    background-color: springgreen;
+    background-color: #00ff7f;
     background-color: black;
     width: 50rem;
     height: 90%;
@@ -36,7 +45,7 @@ h1{
     padding: 15px;
     overflow-y: hidden;
     overflow-x: hidden;
-    box-shadow: 0px 0px 12px 0px  rgb(37, 36, 36);
+    box-shadow: 0px 0px 22px 0px  rgb(250, 249, 249);
 
 
 
@@ -61,6 +70,8 @@ h1{
 }
 label{
     margin-top: 10px;
+    color: white;       
+                    
 }
 .phonebook-form button{
     padding: 10px;
@@ -85,15 +96,25 @@ label{
     display: flex;
 	flex-direction: column;
     padding: 15px;
+    list-style-type: none
+
 }
 img{
     width: 100px;
     border-radius: 50%;
 }
 .list button{
-    width: 60px;
-    height: 30px;
+    display: block;
+    padding: 8px 5px;
+   
     cursor: pointer;
     border: none;
-    /* border-radius: 50%; */
+    background-color: red;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+p{
+    display: block;
 }

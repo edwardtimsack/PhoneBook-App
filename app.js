@@ -43,6 +43,7 @@ function handleFormSubmit(event) {
     // Add the contact's phone numbers to the list item
     const numbers = document.createElement("p");
     numbers.textContent = "Lonestar: " + contact.lonestarNumber + ", Orange: " + contact.orangeNumber;
+    // lonestarInput.style.display = "block"
     listItem.appendChild(numbers);
   
     // Add the contact's photo to the list item
@@ -54,6 +55,34 @@ function handleFormSubmit(event) {
     // Add the list item to the list of contacts
     const list = document.getElementById("list");
     list.appendChild(listItem);
+
+
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete";
+    deleteButton.addEventListener("click", () => {
+    listItem.remove(); // Remove the list item from the list
+    contacts = contacts.filter(c => c !== contact); // Remove the contact from the contacts array
+});
+listItem.appendChild(deleteButton);
+
+// const listItem = document.createElement/("li");
+listItem.setAttribute("id", `contact-${contacts.length}`); // Add an ID to the list item element
+
+function deleteContact(id) {
+  const listItem = document.getElementById(id); // Find the list item element with the given ID
+  if (listItem) {
+    listItem.remove(); // Remove the list item from the list
+    contacts = contacts.filter(c => c.id !== id); // Remove the contact from the contacts array
+  }
+}
+
+deleteButton.addEventListener("click", () => {
+  deleteContact(newContact.id); // Call the deleteContact() function with the ID of the contact
+});
+
+
+    
   }
 
 
