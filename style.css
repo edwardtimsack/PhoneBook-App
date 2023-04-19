@@ -76,9 +76,12 @@ label{
     font-size: 20px;
 
 }
-.phonebook-photo{
+#phonebook-picture{
     border: 3px solid white;
     background-color: white;
+    /* background-color: blueviolet; */
+	cursor: pointer;
+
 }
 .list{
     /* background-color: turquoise; */
